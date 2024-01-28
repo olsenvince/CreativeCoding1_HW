@@ -1,1 +1,4 @@
+The Differences Between GUI and CLI Paper
+GUI stands for graphical user interface. Its main purpose is to help the user utilize the computer through graphics. Such as icons and buttons etc. I think of it best as the “skin” or “cosmetic” part of the interface. It is essentially the layer that goes over the CLI, and makes it easier for most users to interact with.  
+CLI stands for command line interface, and can be used by a series of text prompts. Since I’m on Windows 11, my CLI is Command Prompt. If the GUI is the “skin,” then I think of the CLI as the “bones” or “skeleton” of the interface. I’m not as familiar with it, but I do understand that if you know the language for CLI, it is very convenient for more complicated assignments. 
 
