@@ -1,1 +1,15 @@
-
+span{
+  bachground-color:#ffccdd;
+}
+.indigoText{
+  color: indigo;
+}
+#linkModify{
+  text-decoration: none;
+  color:indigo
+}
+body{
+  background-color: LavenderBlush;
+  font-family: 'Advent Pro', Advent, monospace;
+  text-align: center;
+}
