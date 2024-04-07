@@ -2,6 +2,11 @@ var redcolor = 60;
 var greencolor = 70;
 var bluecolor= 110;
 
+var x = 38;
+var y = 175;
+
+var direction = "right";
+var direction2="down";
 
 //this function only runs once
 function setup() {
@@ -13,38 +18,66 @@ function draw() {
   background(redcolor, bluecolor, greencolor);
   
   //hair 
-  rect(38,45,224,265)
+  rect(x,45,224,265);
   
   //ears
-  ellipse(35,175,30,50)
-  ellipse(265,175,30,50)
+  ellipse(35,y,30,50);
+  ellipse(265,y,30,50);
   
   //shoulders
-  triangle(-30,400,150,310,330,400)
+  triangle(-30,400,150,310,330,400);
   
   //neck
-  rect(105,270,90,95)
+  rect(105,270,90,95);
   
   //head
-  ellipse(150,170,200,230)
+  ellipse(150,170,200,230);
   
   //eyes
-  ellipse(105,160,40,30)
-  ellipse(190,160,40,30)
+  ellipse(105,160,40,30);
+  ellipse(190,160,40,30);
   
  
   //eyebrows
-  line(80,144,130,144)
-  line(220,144,165,144)
+  line(80,144,130,144);
+  line(220,144,165,144);
   
   //nose
-  point(150,230)
+  point(150,230);
   
   //earings
-  rect(30,190,10,15)
-  rect(260,190,10,15)
+  rect(30,190,10,15);
+  rect(260,190,10,15);
   
   //text
-  text('"silly portrait"',115,20)
-  text('Vince Olsen',115,390)
+  text('"silly portrait"',115,20);
+  text('Vince Olsen',115,390);
+  
+  //x var stuff
+  if (direction=="right"){
+  x=x+1;
+  }
+  if (direction=="left"){
+    x=x-1;
+  }
+  if (x>=76){
+    direction = "left";
+  }
+  if (x<=0){
+    direction = "right";
+  }
+  
+  //y var stuff
+  if (direction2=="down"){
+  y=y+3
+  }
+  if(direction2=="up"){
+    y=y-3
+  }
+  if (y>=350){
+    direction2= "up";
+  }
+  if (y<=10){
+    direction2= "down";
+  }
 }
