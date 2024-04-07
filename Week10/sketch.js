@@ -5,10 +5,19 @@ var bluecolor= 110;
 var x = 38;
 var y = 175;
 var z = 105;
+var c = 150;
+var j = 170;
 
-var direction = "right";
+//im going to run out of directions at this rate
+//can i really just call them whatever i want
+//oh my god i can
+var direction ="right";
 var direction2="down";
 var direction3="righ"
+
+var sizeDirection = 1;
+var size = 10
+var count = 0
 
 //this function only runs once
 function setup() {
@@ -33,7 +42,7 @@ function draw() {
   rect(z,270,90,95);
   
   //head
-  ellipse(150,170,200,230);
+  ellipse(c,j,200,230);
   
   //eyes
   ellipse(105,160,40,30);
@@ -52,8 +61,16 @@ function draw() {
   rect(260,190,10,15);
   
   //text
-  text('"silly portrait"',115,20);
-  text('Vince Olsen',115,390);
+  textSize(20)
+  text('Vince Olsen',90,390);
+  textSize(size);
+  size+= sizeDirection;
+  count++;
+  if(count >13){
+        sizeDirection *=-1;
+        count = 0;
+    }
+  text('"silly portrait"',70,20);
   
   //x var stuff
   if (direction=="right"){
@@ -97,3 +114,4 @@ function draw() {
     direction3 = "righ";
   }
 }
+  
