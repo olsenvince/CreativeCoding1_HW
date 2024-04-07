@@ -4,9 +4,11 @@ var bluecolor= 110;
 
 var x = 38;
 var y = 175;
+var z = 105;
 
 var direction = "right";
 var direction2="down";
+var direction3="righ"
 
 //this function only runs once
 function setup() {
@@ -28,7 +30,7 @@ function draw() {
   triangle(-30,400,150,310,330,400);
   
   //neck
-  rect(105,270,90,95);
+  rect(z,270,90,95);
   
   //head
   ellipse(150,170,200,230);
@@ -79,5 +81,19 @@ function draw() {
   }
   if (y<=10){
     direction2= "down";
+  }
+  
+  //z var stuff
+  if (direction3=="righ"){
+    z=z+1;
+  }
+  if (direction3=="lef"){
+    z=z-1;
+  }
+  if (z>=115){
+    direction3 ="lef";
+  }
+  if (z<=87){
+    direction3 = "righ";
   }
 }
