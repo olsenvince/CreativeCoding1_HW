@@ -1,6 +1,9 @@
-var x = 50;
-var y = 50;
+var characterX = 50;
+var characterY = 50;
 var z = 200;
+
+var mousex = 0;
+var mousey = 0;
 
 var direction ="right";
 
@@ -29,7 +32,7 @@ function draw() {
   fill(200,25,60)
   rect(z,185,15,110)
   
-  d//z var stuff
+  //z var stuff
   if (direction=="right"){
   z=z+3;
   }
@@ -43,45 +46,69 @@ function draw() {
     direction = "right";
   }
   
-  //mouse obstacle
-  
-  
   //exit
   fill(20,2,10)
   rect(790,300,10,65);
-  
   fill(200,70,1050)
   rect(760,280,30,20)
   rect(760,365,30,20)
   
+  textSize(16);
+  text("EXIT", width-60,height-265)
+  
+  //out of bounds
+  if(characterX > width && characterY > width-50)
+    {
+        fill(0);
+        stroke(5);
+        textSize(26);
+        text("You Win!", width/2-50, height/2-50);
+    }
+  
+  
   // player rectangle
   fill(24,200,29);
   if (keyIsDown(68)){
-    x+=5;
-    if (x > width) x = width;
+    characterX+=5;
+    if (characterX > width) x = width;
   }
+  
   if(keyIsDown(65)){
-    x-=5;
-   if (x < 10) x = 10;
+    characterX-=5;
+   if (characterX < 10) characterX = 10;
   }
-  if (x >= 780){
-    x = 780
-  } 
+  
+  
   if(keyIsDown(83)){
-    y+=5;
-  if (y > height) y = height;
+    characterY+=5;
+  if (characterY > height) characterY = height;
   }
   if(keyIsDown(87)){
-    y-=5;
-  if (y < 10) y = 10;
+    characterY-=5;
+  if (characterY < 10) characterY = 10;
 }
-  if (y >= 530){
-    y = 530
+  if (characterY >= 530){
+    characterY = 530
   } 
-    rect(x,y,10,60);
+    rect(characterX,characterY,10,60);
   
+  //mouse obstacle
+      fill(200, 290, 10);
+      ellipse(mousex, mousey, 30, 30);
+     
+    }
+
+    function mouseClicked() 
+    {  
+      mousex = mouseX;
+      mousey = mouseY;
   
   
 } //end draw
 
+/*
+if (x >= 780){
+    x = 780
+}
+*/
 
