@@ -2,8 +2,8 @@ var characterX = 50;
 var characterY = 50;
 var z = 200;
 
-var mousex = 0;
-var mousey = 0;
+var mouseA = 0;
+var mouseB = 0;
 
 var direction ="right";
 
@@ -62,16 +62,6 @@ function draw() {
   textSize(16);
   text("EXIT", width-60,height-265)
   
-   
-  //out of bounds
-  if(characterX > width && characterY > width<=800)
-    {
-        fill(100,200,500);
-        stroke(5);
-        textSize(26);
-        text("You Win!", width/2-50, height/2-50);
-    }
-  
   
   // player rectangle
   fill(24,200,29);
@@ -99,11 +89,24 @@ function draw() {
   //what did i do T-T
   //mouse obstacle
       fill(200, 290, 10);
-      ellipse(mousex, mousey, 30, 30);
-  function mouseClicked() { 
-      mousex = mouseX;
-      mousey = mouseY;
+      ellipse(mouseA, mouseB, 30, 30);
+ 
+  function mouseClicked() 
+  {
+      mouseA = mouseA;
+      mouseB = mouseB;
   }
+  
+  
+  //out of bounds
+  if(characterX > width && characterY > width<=800)
+    {
+        fill(100,200,500);
+        stroke(5);
+        textSize(26);
+        text("You Win!", width/2-50, height/2-50);
+    }
+  
   
 } //end draw
 
