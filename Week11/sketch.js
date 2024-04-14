@@ -7,12 +7,15 @@ var mousey = 0;
 
 var direction ="right";
 
+
 function setup() {
   createCanvas(800, 600);
 }
 
+
 function draw() {
   background(20, 2, 10);
+  
   
   //borders
   fill(85,40,100)
@@ -21,6 +24,7 @@ function draw() {
   rect(0,590,800,10)
   rect(790,0,800,600);
   
+  
   //obstacle1
   rect(115,0,20,450)
   rect(320,0,20,180)
@@ -28,9 +32,11 @@ function draw() {
   rect(530,150,20,600)
   rect(530,0,20,35)
   
+ 
   //obstacle2
   fill(200,25,60)
   rect(z,185,15,110)
+  
   
   //z var stuff
   if (direction=="right"){
@@ -46,20 +52,21 @@ function draw() {
     direction = "right";
   }
   
+  
   //exit
   fill(20,2,10)
   rect(790,300,10,65);
   fill(200,70,1050)
   rect(760,280,30,20)
   rect(760,365,30,20)
-  
   textSize(16);
   text("EXIT", width-60,height-265)
   
+   
   //out of bounds
-  if(characterX > width && characterY > width-50)
+  if(characterX > width && characterY > width<=800)
     {
-        fill(0);
+        fill(100,200,500);
         stroke(5);
         textSize(26);
         text("You Win!", width/2-50, height/2-50);
@@ -77,7 +84,6 @@ function draw() {
     characterX-=5;
   }
   
-  
   if(keyIsDown(83)){
     characterY+=5;
   if (characterY > height) characterY = height;
@@ -86,20 +92,18 @@ function draw() {
   if(keyIsDown(87)){
     characterY-=5;
 }
+  rect(characterX,characterY,10,60);
   
-    rect(characterX,characterY,10,60);
   
+  //THIS WAS LITERALLY JUST WORKING WHAT HAPPENED
+  //what did i do T-T
   //mouse obstacle
       fill(200, 290, 10);
       ellipse(mousex, mousey, 30, 30);
-     
-    }
-
-    function mouseClicked() 
-    {  
+  function mouseClicked() { 
       mousex = mouseX;
       mousey = mouseY;
-  
+  }
   
 } //end draw
 
