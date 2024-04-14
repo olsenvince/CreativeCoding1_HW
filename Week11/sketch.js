@@ -75,7 +75,6 @@ function draw() {
   
   if(keyIsDown(65)){
     characterX-=5;
-   if (characterX < 10) characterX = 10;
   }
   
   
@@ -83,13 +82,11 @@ function draw() {
     characterY+=5;
   if (characterY > height) characterY = height;
   }
+ 
   if(keyIsDown(87)){
     characterY-=5;
-  if (characterY < 10) characterY = 10;
 }
-  if (characterY >= 530){
-    characterY = 530
-  } 
+  
     rect(characterX,characterY,10,60);
   
   //mouse obstacle
@@ -107,8 +104,15 @@ function draw() {
 } //end draw
 
 /*
-if (x >= 780){
-    x = 780
+if (characterX < 10) characterX = 10;
+
+if (characterY < 10) characterY = 10;
+
+if (characterY >= 530){
+    characterY = 530
+  } 
+
+if (characterx >= 780){
+    characterX = 780
 }
 */
-
