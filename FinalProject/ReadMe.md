@@ -32,6 +32,9 @@ Yeah, there's probably an easy way to fix that without going through every circl
 
 #5 I want the record to "spin" when the song is playing, I'm going to use reference from weidi's video on the arc stuff for this 
 
+- I will need two arcs at once for there record.
+- if two arcs on one record dont work make a second "layer" of the circles and add the other arc there? If i can get them to rotate at the right times it will either look really cool or no one will tell that there are two layers or both. 
+
 This is basically just becoming a very complicated or just overly fancy sound vizualizer but also not??? Which i didn't want to do bc I had seen so many examples of them that I didn't want to do the boring thing and make another one. but now boy howdy I am kicking myself for not doing the easy thing. 
 
 end of 05.03.24 notes its bed time and tomorrow will make me cry so I need to save my energy 
