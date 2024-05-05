@@ -4,9 +4,8 @@
 let gap = 14;
 let cirNum = 26;
 let cirSize = 20;
-let angle;
-let button;
-let song;
+let angle = 0;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,33 +15,27 @@ function setup() {
 function draw() {
   background(1,10,35);
   
-  //custom cursor
-  noCursor();
-  noStroke();
-  fill('white');
-  circle(mouseX,mouseY,6);
-  fill(1,10,35);
-  circle(mouseX,mouseY,4);
-  
   //record circles and movement 
   push();
   translate(width/2, height/2);
   rotate(angle);
-  angle = angle +1;
   //angle = map(mouseX,0, width,-10, 5);
   //arc 2 does the opposite? 
   noFill();
   stroke('white');
   strokeWeight(1);
   for(let i=0; i<cirNum;i++){
+    stroke("blue")
+    circle(0,0,cirSize+gap*i,cirSize+gap*i)
     stroke('white');
     arc(0,0,cirSize+gap*i,cirSize+gap*i,390,160);
     stroke('white')
     arc(0,0,cirSize+gap*i,cirSize+gap*i,210,340);
   }
+  angle = angle + -1;
+  stroke('white');
   strokeWeight(2);
   circle(0,0,380);
-  
   pop();
   
   //center circles 'donut'
@@ -65,31 +58,29 @@ function draw() {
   circle(120,190,50);
   
   //arm thingy
+  push();
+  translate(120,190);
+  rotate();
+  
   
   strokeWeight(20);
   strokeJoin(ROUND);
   beginShape();
-  vertex(120, 190);
-  vertex(120, 450);
-  vertex(250, 520);
+  vertex(0, 0);
+  vertex(10, 250);
+  vertex(130, 300);
   endShape();
+  pop();
   
   //mouse click and drag
   
-  //play button
-  //song = loadSound("06Going Gets Tuff.mp3", loaded);
-  //button = createButton("play")
-  //button.mousePressed(togglePlaying)
-  //function togglePlaying(){
-    //song.play();
-  //}
-  //function loaded(){
-    //console.log("loaded");
-  //}
   
   fill('white');
   strokeWeight(1);
   rect(685,300,90,40,40);
+  fill(1,10,35);
+  textSize(22)
+  text("Play",707,327)
   //add play symbol
   //start music
   
@@ -97,15 +88,24 @@ function draw() {
   fill('white')
   strokeWeight(1)
   rect(685,365,90,40,40);
+  fill(1,10,35);
+  textSize(22)
+  text("Pause",700,392)
   //add pause symbol 
   //stop music
   
   //now playing
   textSize(25);
-  text("Now Playing",360,600);
+  text("Now Playing...",360,600);
   //song name moving text
   //song
   
-  //record movement
+  //custom cursor
+  noCursor();
+  noStroke();
+  fill(1,10,35);
+  circle(mouseX,mouseY,6);
+  fill('white');
+  circle(mouseX,mouseY,4);
   
 }
