@@ -1,4 +1,5 @@
 //insiration from weidi on youtube, interactive album cover
+//also with some assistance from Coding Train on youtube
 //changed the inspiration from my proposal because I got the idea for this not long after submitting it 
 
 let gap = 14;
@@ -6,10 +7,28 @@ let cirNum = 26;
 let cirSize = 20;
 let angle = 0;
 
+let button;
+let song;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
+  song = loadSound("once-in-paris-168895.mp3")
+  let button = createButton('Play')
+  button.size(90,40)
+  button.position(660,340)
+  button.mousePressed(togglePlaying);
+  
+  function togglePlaying(){
+    if(!song.isPlaying()){
+      song.play();
+      song.setVolume(0.3);
+      button.html("Pause");
+    } else{
+      song.pause();
+      button.html("Play");
+    }
+  }
 }
 
 function draw() {
@@ -60,45 +79,37 @@ function draw() {
   //arm thingy
   push();
   translate(120,190);
-  rotate();
-  
-  
+  //rotate(angle);
+  //angle = angle + -1
   strokeWeight(20);
   strokeJoin(ROUND);
   beginShape();
   vertex(0, 0);
-  vertex(10, 250);
-  vertex(130, 300);
+  vertex(15, 240);
+  vertex(140, 280);
   endShape();
   pop();
+
+  //play button
   
-  //mouse click and drag
   
   
-  fill('white');
-  strokeWeight(1);
-  rect(685,300,90,40,40);
-  fill(1,10,35);
-  textSize(22)
-  text("Play",707,327)
-  //add play symbol
-  //start music
-  
+  //fill('white');
+  //strokeWeight(1);
+  //rect(685,300,90,40,40);
+  //fill(1,10,35);
+  //textSize(22)
+  //text("Play",707,327)
+
   //pause button
-  fill('white')
-  strokeWeight(1)
-  rect(685,365,90,40,40);
-  fill(1,10,35);
-  textSize(22)
-  text("Pause",700,392)
+  //fill('white')
+  //strokeWeight(1)
+  //rect(685,365,90,40,40);
+  //fill(1,10,35);
+  //textSize(22)
+  //text("Pause",700,392)
   //add pause symbol 
   //stop music
-  
-  //now playing
-  textSize(25);
-  text("Now Playing...",360,600);
-  //song name moving text
-  //song
   
   //custom cursor
   noCursor();
@@ -107,5 +118,12 @@ function draw() {
   circle(mouseX,mouseY,6);
   fill('white');
   circle(mouseX,mouseY,4);
+  
+  //now playing
+  textSize(25);
+  text("Now Playing...",360,600);
+  //song name moving text
+  //song
+
   
 }
