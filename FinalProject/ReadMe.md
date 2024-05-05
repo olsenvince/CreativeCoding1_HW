@@ -42,9 +42,9 @@ end of 05.03.24 notes its bed time and tomorrow will make me cry so I need to sa
 
 things i need
 
-- record player arm to rotate within certain boundaries
+- *record player arm to rotate within certain boundaries
 
-- record player arm to only rotate when pressed pause/ pressed play
+- *record player arm to only rotate when pressed pause/ pressed play
 
 - *record to on start spinning when pressed play
 
@@ -64,6 +64,10 @@ in addition the the arm, the button isn't quite how I'd like it. It looks clunky
 
 good luck to me ig
 
+
+end notes:
+
+there are definitely some things that I wish I had more time or skill to work on such as making the button more aesthetically pleasing to look at. As well as the arm rotating, i think it could be a lot smoother. But I got everything off my list from earlier checked off, so I'm satisfied with submitting it. 
 
 
 
