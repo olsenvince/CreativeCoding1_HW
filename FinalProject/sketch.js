@@ -6,7 +6,6 @@ let gap = 14;
 let cirNum = 26;
 let cirSize = 20;
 let angle = 0;
-let spin;
 let button;
 let song;
 let z = 220;
@@ -32,6 +31,7 @@ function setup() {
       
     }
   }
+
 }
 
 function draw() {
@@ -46,13 +46,13 @@ function draw() {
   noFill();
   stroke('white');
   strokeWeight(1);
-  for(let i=0; i<cirNum;i++){
-    stroke("blue")
-    circle(0,0,cirSize+gap*i,cirSize+gap*i)
-    stroke('white');
-    arc(0,0,cirSize+gap*i,cirSize+gap*i,390,160);
-    stroke('white')
-    arc(0,0,cirSize+gap*i,cirSize+gap*i,210,340);
+  for(let i = 0; i < cirNum; i++){
+    stroke("white")
+    circle(0, 0, cirSize + gap * i, cirSize + gap * i)
+    stroke('blue');
+    arc(0, 0, cirSize + gap * i, cirSize + gap * i, 390+i*2, 160);
+    stroke('blue')
+    arc(0, 0, cirSize + gap * i, cirSize + gap * i, 210+i*2, 340);
   }
   if(!song.isPlaying()){
   } else{
@@ -85,32 +85,23 @@ function draw() {
   //arm thingy
   push();
   translate(120,190);
+  
+  if(!song.isPlaying()){
+  } else{
+  rotate(-10)
+    
+  }
   //rotate(angle);
   //angle = angle + -1
   strokeWeight(20);
   strokeJoin(ROUND);
   beginShape();
   vertex(0, 0);
-  vertex(15, 240);
-  vertex(140, 280);
+  vertex(0, 250);
+  vertex(130, 300);
   endShape();
   pop();
 
-  //play button
-  //fill('white');
-  //strokeWeight(1);
-  //rect(685,300,90,40,40);
-  //fill(1,10,35);
-  //textSize(22)
-  //text("Play",707,327)
-
-  //pause button
-  //fill('white')
-  //strokeWeight(1)
-  //rect(685,365,90,40,40);
-  //fill(1,10,35);
-  //textSize(22)
-  //text("Pause",700,392)
   
   //custom cursor
   noCursor();
@@ -149,3 +140,29 @@ function draw() {
   }
   
 }
+
+
+//play button
+  //fill('white');
+  //strokeWeight(1);
+  //rect(685,300,90,40,40);
+  //fill(1,10,35);
+  //textSize(22)
+  //text("Play",707,327)
+
+  //pause button
+  //fill('white')
+  //strokeWeight(1)
+  //rect(685,365,90,40,40);
+  //fill(1,10,35);
+  //textSize(22)
+  //text("Pause",700,392)
+
+//stroke('white')
+  //var wave = fft.waveform()
+  //for (var i = 0; i < width; i++);{
+    //var index = floor(map(i, 0, width, 0, wave.length))
+    //var x = i
+    //var y = wave[index] *300 + height/2
+    //point(x,y)
+  //}
