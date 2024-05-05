@@ -40,6 +40,24 @@ This is basically just becoming a very complicated or just overly fancy sound vi
 end of 05.03.24 notes its bed time and tomorrow will make me cry so I need to save my energy 
 
 
+05.05.24
+
+things i need
+
+- record player arm to rotate within certain boundaries
+
+- record player arm to only rotate when pressed pause/ pressed play
+
+- record to on start spinning when pressed play
+
+- stop spinned when pressed pause
+
+- a song to start when "play" and stop when "pause"
+
+- moving text at bottom "song name" to exit one side of the screen and come back on the other
+
+- for the song to work TT-TT
+
 
 
 
