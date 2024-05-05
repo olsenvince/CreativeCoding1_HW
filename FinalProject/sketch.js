@@ -29,6 +29,7 @@ function setup() {
     } else{
       song.pause();
       button.html("Play");
+      
     }
   }
 }
@@ -53,7 +54,10 @@ function draw() {
     stroke('white')
     arc(0,0,cirSize+gap*i,cirSize+gap*i,210,340);
   }
-  angle = angle + -1;
+  if(!song.isPlaying()){
+  } else{
+    angle = angle + -1;
+  }
   stroke('white');
   strokeWeight(2);
   circle(0,0,380);
@@ -123,7 +127,12 @@ function draw() {
   //title movement
   textSize(20)
   text('"once in paris" by pumpupthemind',z,630)
+  if(!song.isPlaying()){
+    
+  } else{
   titleMovement();
+  }
+  
   function titleMovement(){
     if (direction=="right"){
   z=z+1;
