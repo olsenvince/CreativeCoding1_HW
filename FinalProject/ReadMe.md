@@ -62,6 +62,8 @@ things i need
 
   the only thing im struggling with now is the record arm. I could just get away with leaving it in place but i really think a click and drag or having it move on its own would be really cool. I've gotten it to the point where i wouldn't be scared about submitting it, because it works as mostly intended. But I still have some extra hours and I want to try moving that arm.
 
+in addition the the arm, the button isn't quite how I'd like it. It looks clunky and I had a more aesthetically pleasing idea for the button, but I'm not going to worry about how it looks right now. 
+
 good luck to me ig
 
 
