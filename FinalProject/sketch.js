@@ -37,6 +37,21 @@ function setup() {
 function draw() {
   background(1,10,35);
   
+  //bg fuzz/noise
+  push();
+  stroke("white")
+  strokeWeight(1);
+  for(let i =0; i < 50; i++){
+  point(random(width), random(height));
+  }
+  pop();
+  
+  //record box
+  stroke("white")
+  strokeWeight(1);
+  fill(1,10,35);
+  rect(71,145,550,410,40);
+  
   //record circles and movement 
   push();
   translate(width/2, height/2);
@@ -62,7 +77,6 @@ function draw() {
   strokeWeight(2);
   circle(0,0,380);
   pop();
-  
   //center circles 'donut'
   stroke('white');
   strokeWeight(1);
@@ -74,15 +88,10 @@ function draw() {
   fill('white');
   circle(width/2,height/2,10);
   
-  //record box shapes
-  strokeWeight(1);
-  noFill();
-  rect(71,145,550,410,40);
+  //arm thingy
   noFill();
   strokeWeight(10);
   circle(120,190,50);
-  
-  //arm thingy
   push();
   translate(120,190);
   
@@ -101,7 +110,6 @@ function draw() {
   vertex(130, 300);
   endShape();
   pop();
-
   
   //custom cursor
   noCursor();
@@ -138,6 +146,8 @@ function draw() {
     direction = "right";
   }
   }
+  
+  
   
 }
 
