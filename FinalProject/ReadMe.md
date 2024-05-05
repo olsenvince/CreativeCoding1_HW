@@ -52,11 +52,11 @@ things i need
 
 - stop spinned when pressed pause
 
-- a song to start when "play" and stop when "pause"
+- a song to start when "play" and stop when "pause"*
 
-- moving text at bottom "song name" to exit one side of the screen and come back on the other
+- moving text at bottom "song name" to exit one side of the screen and come back on the other*
 
-- for the song to work TT-TT
+- for the song to work TT-TT*
 
 
 
