@@ -48,15 +48,23 @@ things i need
 
 - record player arm to only rotate when pressed pause/ pressed play
 
-- record to on start spinning when pressed play
+- *record to on start spinning when pressed play
 
-- stop spinned when pressed pause
+- *stop spinned when pressed pause
 
-- a song to start when "play" and stop when "pause"*
+- *a song to start when "play" and stop when "pause"
 
-- moving text at bottom "song name" to exit one side of the screen and come back on the other*
+- *moving text at bottom "song name" to exit one side of the screen and come back on the other
 
-- for the song to work TT-TT*
+- *for the song to work TT-TT
+
+  the ones with * are ones that i've finished, a lot of them had easier fixes than I had thought lol
+
+  the only thing im struggling with now is the record arm. I could just get away with leaving it in place but i really think a click and drag or having it move on its own would be really cool. I've gotten it to the point where i wouldn't be scared about submitting it, because it works as mostly intended. But I still have some extra hours and I want to try moving that arm.
+
+good luck to me ig
+
+
 
 
 
