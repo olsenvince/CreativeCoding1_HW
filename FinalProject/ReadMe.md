@@ -18,9 +18,7 @@ I want to making a click and drag function for the record players arm, when the 
 
 But I need a few things to make that happen:
 
-#1 Well... I need an arm thingy for the record but its going to be a weird shape. (OMG WAIT COULD I USE AN ANGLE? LIKE A REALLY THICKLY DRAWN ANGLE!?!?! IS THERE SOMETHING LIKE THAT?!!?(more on this later)) I can do the shape, but I think I have to start with remaking my coordinates for the circles used in the record. 
-
-For whatever reason the windowWidth and windowHeight get weird with the coordinates and I need them to be exact for this arm thingy to work. 
+#1 Well... I need an arm thingy for the record but its going to be a weird shape. I can do the shape, but I think I have to start with remaking my coordinates for the circles used in the record. 
 
 Yeah, there's probably an easy way to fix that without going through every circle and changing every width but i dont know it and I'm not desperate enough yet to spend hours googling for the exact thing im looking for (...yet)
 
