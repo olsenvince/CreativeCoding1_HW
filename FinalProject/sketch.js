@@ -6,9 +6,11 @@ let gap = 14;
 let cirNum = 26;
 let cirSize = 20;
 let angle = 0;
-
+let spin;
 let button;
 let song;
+let z = 220;
+let direction = "right"
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -91,9 +93,6 @@ function draw() {
   pop();
 
   //play button
-  
-  
-  
   //fill('white');
   //strokeWeight(1);
   //rect(685,300,90,40,40);
@@ -108,8 +107,6 @@ function draw() {
   //fill(1,10,35);
   //textSize(22)
   //text("Pause",700,392)
-  //add pause symbol 
-  //stop music
   
   //custom cursor
   noCursor();
@@ -121,9 +118,25 @@ function draw() {
   
   //now playing
   textSize(25);
-  text("Now Playing...",360,600);
-  //song name moving text
-  //song
-
+  text("Now Playing...",300,600);
+  
+  //title movement
+  textSize(20)
+  text('"once in paris" by pumpupthemind',z,630)
+  titleMovement();
+  function titleMovement(){
+    if (direction=="right"){
+  z=z+1;
+  }
+  if (direction=="left"){
+    z=z-1;
+  }
+  if (z>=400){
+    direction = "left";
+  }
+  if (z<=50){
+    direction = "right";
+  }
+  }
   
 }
