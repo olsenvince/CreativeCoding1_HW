@@ -88,8 +88,8 @@ function draw() {
   fill('white');
   circle(386,355,10);
   
-  stroke("red")
-  circle(386,355,2)
+  //stroke("red")
+  //circle(386,355,2)
   
   //arm thingy
   noFill();
