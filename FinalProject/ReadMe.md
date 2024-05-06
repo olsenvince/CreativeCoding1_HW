@@ -80,6 +80,13 @@ i have given myself two options because no one in the discord server has yet to 
 7:25pm 
 I've tinkered with some stuff, and my read me file will shpw up? but not my actual project? ergh.
 
+8:00pm
+I DID IT 
+IT'S WORKING 
+When it wasn't working intially, I deleted all my files and then reuploaded them one at a time and that somehow helped. Also, I had forgotten to add my index.html back lol 
+
+now i'm just waiting for the page to catch up with some small changes i made in my sketch.js and then I can upload!
+
 
 
 
