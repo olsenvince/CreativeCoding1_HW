@@ -54,7 +54,7 @@ function draw() {
   
   //record circles and movement 
   push();
-  translate(width/2, height/2);
+  translate(386, 355);
   rotate(angle);
   //angle = map(mouseX,0, width,-10, 5);
   //arc 2 does the opposite? 
