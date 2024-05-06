@@ -8,7 +8,7 @@ let cirSize = 20;
 let angle = 0;
 let button;
 let song;
-let z = 220;
+let z = 2;
 let direction = "right"
 
 function setup() {
@@ -84,9 +84,12 @@ function draw() {
   //circle(width/2,height/2,75); 
   //fill(1,10,35);
   fill(1,10,35)
-  circle(width/2,height/2,90)
+  circle(386,355,90)
   fill('white');
-  circle(width/2,height/2,10);
+  circle(386,355,10);
+  
+  stroke("red")
+  circle(386,355,2)
   
   //arm thingy
   noFill();
@@ -144,9 +147,7 @@ function draw() {
   if (z<=50){
     direction = "right";
   }
-  }
-  
-  
+  } 
   
 }
 
