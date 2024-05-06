@@ -69,15 +69,20 @@ end notes:
 
 there are definitely some things that I wish I had more time or skill to work on such as making the button more aesthetically pleasing to look at. As well as the arm rotating, i think it could be a lot smoother. But I got everything off my list from earlier checked off, so I'm satisfied with submitting it. 
 
-
+6:45pm
 OK SO THE LIVE SITE ISNT WORKING 
 SO IM TOTALLY NORMAL AND OK ABOUT THIS (im panicking)
 
-i have three options for myself because no one in the discord server has yet to know how to help and I don't think an email will reach anyone before the deadline so
+i have given myself two options because no one in the discord server has yet to know how to help and I don't think an email will reach anyone before the deadline so
 - just send in the github link
-- make a new repository for the final specifically. because i feel like somehow in the other files are not helping? idk, everything was working with github pages until after week 8 i think so im not sure what went wrong
 - *cry
-- or a mixure of all three
+
+7:25pm 
+I've tinkered with some stuff, and my read me file will shpw up? but not my actual project? ergh.
+
+
+
+
 
 
 
