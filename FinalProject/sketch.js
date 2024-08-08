@@ -1,4 +1,4 @@
-//insiration from weidi on youtube, interactive album cover
+//inspiration from weidi on youtube, interactive album cover
 //also with some assistance from Coding Train on youtube
 //changed the inspiration from my proposal because I got the idea for this not long after submitting it 
 
